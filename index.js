@@ -16,3 +16,10 @@ const addHot = () => {
       toBeHot[i].innerHTML += hotTag
    }
 }
+
+const travelCount = () => {
+   let viaggi = 1 //messo a 1 per contare tutte le card + l'offerta del giorno
+   viaggi += document.querySelectorAll(".card").length
+   console.log("Il numero totale di viaggi nel sito è di", viaggi)
+   return viaggi
+}
