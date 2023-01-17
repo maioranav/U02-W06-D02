@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+   <title>TravelParadise</title>
+</head>
+
+<body>
+   <nav class="navbar bg-light navbar-expand-lg mb-4">
+      <div class="container">
+         <a class="navbar-brand" href="#">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block my-1" viewBox="0 0 118 94"
+               role="img">
+               <title>Bootstrap</title>
+               <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+                  fill="currentColor"></path>
+            </svg>
+
+         </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+               <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#saldi">Saldi</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#summer">Welcome Summer</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#lastmin">Last Minute</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#reviews">Recensioni</a>
+               </li>
+            </ul>
+            <form class="d-flex" role="search">
+               <input class="form-control me-2" type="search" placeholder="Cerca posti da sogno" aria-label="Search"
+                  wfd-id="id0">
+               <button class="btn btn-outline-danger" type="submit">Cerca</button>
+            </form>
+         </div>
+      </div>
+   </nav>
+
+   <div class="container mb-5">
+      <div class="row rounded bg-light p-3">
+         <div class="row border-bottom-1 d-flex align-items-center">
+            <div
+               class="col d-flex align-items-center border-bottom p-3 justify-content-center justify-content-md-start">
+               <h1 class="d-inline display-3 mb-0">Eveline-R</h1><span class="m-1 d-none d-sm-inline"> -- Feel the
+                  Freedom</span>
+            </div>
+         </div>
+         <div class="row">
+            <h5 class="p-3 fst-italic d-flex justify-content-center justify-content-md-start text-center text-md-start">
+               Scopri le
+               destinazioni più
+               calde del momento!</h5>
+         </div>
+         <div class="row d-flex  justify-content-center justify-content-md-start">
+            <a class="btn btn-info text-light fw-bold col-6 col-md-3 col-lg-2 m-3">Prenota Ora!</a>
+         </div>
+      </div>
+   </div>
+
+   <div class="container mb-5" id="saldi">
+      <div class="row d-flex justify-content-between align-items-center mb-2">
+         <div class="col">
+            <h4 class="fw-bold m-0">Saldi</h4>
+         </div>
+         <div class="col d-flex justify-content-end">
+            <a class="text-decoration-none text-info">Nascondi Sezione</a>
+         </div>
+      </div>
+      <div id="cardsSales" class="row-cols-2 row-cols-md-3 row-cols-lg-4 d-flex justify-content-between flex-wrap">
+         <div class="col pe-1 mb-3">
+            <div class="card border-info">
+               <img src="https://placedog.net/500/280" class="card-img-top" alt="Dog Pic">
+               <div class="card-body">
+                  <h5 class="card-title fw-semibold">Titolo</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magnam
+                     voluptatibus
+                     laboriosam in deserunt, cum et nostrum officiis necessitatibus impedit sit amet temporibus, hic rem
+                     facere, recusandae voluptatem illo inventore.</p>
+               </div>
+               <div class="card-body">
+                  <a href="#" class="btn btn-info">Prenota</a>
+               </div>
+            </div>
+         </div>
+         <div class="col pe-1 mb-3">
+            <div class="card border-info">
+               <img src="https://placedog.net/500/280" class="card-img-top" alt="Dog Pic">
+               <div class="card-body">
+                  <h5 class="card-title fw-semibold">Titolo</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magnam
+                     voluptatibus
+                     laboriosam in deserunt, cum et nostrum officiis necessitatibus impedit sit amet temporibus, hic rem
+                     facere, recusandae voluptatem illo inventore.</p>
+               </div>
+               <div class="card-body">
+                  <a href="#" class="btn btn-info">Prenota</a>
+               </div>
+            </div>
+         </div>
+         <div class="col pe-1 mb-3">
+            <div class="card border-info">
+               <img src="https://placedog.net/500/280" class="card-img-top" alt="Dog Pic">
+               <div class="card-body">
+                  <h5 class="card-title fw-semibold">Titolo</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magnam
+                     voluptatibus
+                     laboriosam in deserunt, cum et nostrum officiis necessitatibus impedit sit amet temporibus, hic rem
+                     facere, recusandae voluptatem illo inventore.</p>
+               </div>
+               <div class="card-body">
+                  <a href="#" class="btn btn-info">Prenota</a>
+               </div>
+            </div>
+         </div>
+         <div class="col pe-1 mb-3 d-md-none d-lg-block">
+            <div class="card border-info">
+               <img src="https://placedog.net/500/280" class="card-img-top" alt="Dog Pic">
+               <div class="card-body">
+                  <h5 class="card-title fw-semibold">Titolo</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magnam
+                     voluptatibus
+                     laboriosam in deserunt, cum et nostrum officiis necessitatibus impedit sit amet temporibus, hic rem
+                     facere, recusandae voluptatem illo inventore.</p>
+               </div>
+               <div class="card-body">
+                  <a href="#" class="btn btn-info">Prenota</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="container mb-5" id="summer">
+      <div class="row d-flex justify-content-between align-items-center mb-2">
+         <div class="col">
+            <h4 class="fw-bold m-0">Welcome Summer</h4>
+         </div>
+         <div class="col d-flex justify-content-end">
+            <a class="text-decoration-none text-info">Nascondi Sezione</a>
+         </div>
+      </div>
+      <div id="cardsSales" class="row-cols-2 row-cols-lg-3 d-flex justify-content-between flex-wrap">
+         <div class="col pe-1 mb-3">
+            <div class="card border shadow position-relative">
+               <span class="badge text-bg-danger position-absolute top-0 end-0 m-2">HOT</span>
+               <img src="https://placedog.net/600/400" class="card-img-top" alt="Dog Pic">
+               <div class="card-body">
+                  <h5 class="card-title fw-semibold">Titolo</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magnam
+                     voluptatibus
+                     laboriosam in deserunt, cum et nostrum officiis necessitatibus impedit sit amet temporibus, hic rem
+                     facere, recusandae voluptatem illo inventore.</p>
+               </div>
+               <div class="card-body">
+                  <a href="#" class="btn btn-info">Prenota</a>
+               </div>
+            </div>
+         </div>
+         <div class="col pe-1 mb-3">
+            <div class="card border shadow position-relative">
+               <span class="badge text-bg-danger position-absolute top-0 end-0 m-2">HOT</span>
+               <img src="https://placedog.net/600/400" class="card-img-top" alt="Dog Pic">
+               <div class="card-body">
+                  <h5 class="card-title fw-semibold">Titolo</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magnam
+                     voluptatibus
+                     laboriosam in deserunt, cum et nostrum officiis necessitatibus impedit sit amet temporibus, hic rem
+                     facere, recusandae voluptatem illo inventore.</p>
+               </div>
+               <div class="card-body">
+                  <a href="#" class="btn btn-info">Prenota</a>
+               </div>
+            </div>
+         </div>
+         <div class="col pe-1 mb-3">
+            <div class="card border shadow position-relative">
+               <span class="badge text-bg-danger position-absolute top-0 end-0 m-2">HOT</span>
+               <img src="https://placedog.net/600/400" class="card-img-top" alt="Dog Pic">
+               <div class="card-body">
+                  <h5 class="card-title fw-semibold">Titolo</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magnam
+                     voluptatibus
+                     laboriosam in deserunt, cum et nostrum officiis necessitatibus impedit sit amet temporibus, hic rem
+                     facere, recusandae voluptatem illo inventore.</p>
+               </div>
+               <div class="card-body">
+                  <a href="#" class="btn btn-info">Prenota</a>
+               </div>
+            </div>
+         </div>
+         <div class="col pe-1 mb-3">
+            <div class="card border shadow position-relative">
+               <span class="badge text-bg-danger position-absolute top-0 end-0 m-2">HOT</span>
+               <img src="https://placedog.net/600/400" class="card-img-top" alt="Dog Pic">
+               <div class="card-body">
+                  <h5 class="card-title fw-semibold">Titolo</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magnam
+                     voluptatibus
+                     laboriosam in deserunt, cum et nostrum officiis necessitatibus impedit sit amet temporibus, hic rem
+                     facere, recusandae voluptatem illo inventore.</p>
+               </div>
+               <div class="card-body">
+                  <a href="#" class="btn btn-info">Prenota</a>
+               </div>
+            </div>
+         </div>
+         <div class="col pe-1 mb-3">
+            <div class="card border shadow position-relative">
+               <span class="badge text-bg-danger position-absolute top-0 end-0 m-2">HOT</span>
+               <img src="https://placedog.net/600/400" class="card-img-top" alt="Dog Pic">
+               <div class="card-body">
+                  <h5 class="card-title fw-semibold">Titolo</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magnam
+                     voluptatibus
+                     laboriosam in deserunt, cum et nostrum officiis necessitatibus impedit sit amet temporibus, hic rem
+                     facere, recusandae voluptatem illo inventore.</p>
+               </div>
+               <div class="card-body">
+                  <a href="#" class="btn btn-info">Prenota</a>
+               </div>
+            </div>
+         </div>
+         <div class="col pe-1 mb-3">
+            <div class="card border shadow position-relative">
+               <span class="badge text-bg-danger position-absolute top-0 end-0 m-2">HOT</span>
+               <img src="https://placedog.net/600/400" class="card-img-top" alt="Dog Pic">
+               <div class="card-body">
+                  <h5 class="card-title fw-semibold">Titolo</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magnam
+                     voluptatibus
+                     laboriosam in deserunt, cum et nostrum officiis necessitatibus impedit sit amet temporibus, hic rem
+                     facere, recusandae voluptatem illo inventore.</p>
+               </div>
+               <div class="card-body">
+                  <a href="#" class="btn btn-info">Prenota</a>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </div>
+
+   <div class="container mb-5" id="dailydeals">
+      <div class="row d-flex justify-content-between align-items-center mb-2">
+         <div class="col">
+            <h4 class="fw-bold m-0">Offerta del giorno</h4>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-6 col-lg-7"><img class="w-100 shadow" src="https://placedog.net/800/600" alt="Doc Pic"></div>
+         <div class="col-6 col-lg-5">
+            <h3 class="fw-bold mb-4">Fushifaru Maldives</h3>
+            <pre class="mb-4">15.01.2021-31.01.2021</pre>
+            <p class="mb-4">Ville a partire da 500&euro;, non fartele sfuggire!</p>
+            <span class="badge text-bg-dark rounded-5">Best Offer</>
+         </div>
+      </div>
+   </div>
+
+   <div class="container mb-5" id="lastmin">
+      <div class="row d-flex justify-content-between align-items-center mb-2">
+         <div class="col d-flex flex-column">
+            <h4 class="fw-bold m-0">Last Minute</h4>
+         </div>
+         <div class="row-cols-2 row-cols-md-3 row-cols-lg-6 d-flex flex-wrap">
+            <div class="col card border-0 p-2">
+               <img src="https://placedog.net/600/400" class="card-img shadow" alt="Dog Pic">
+            </div>
+            <div class="col card border-0 p-2">
+               <img src="https://placedog.net/600/400" class="card-img shadow" alt="Dog Pic">
+            </div>
+            <div class="col card border-0 p-2">
+               <img src="https://placedog.net/600/400" class="card-img shadow" alt="Dog Pic">
+            </div>
+            <div class="col card border-0 p-2">
+               <img src="https://placedog.net/600/400" class="card-img shadow" alt="Dog Pic">
+            </div>
+            <div class="col card border-0 p-2">
+               <img src="https://placedog.net/600/400" class="card-img shadow" alt="Dog Pic">
+            </div>
+            <div class="col card border-0 p-2">
+               <img src="https://placedog.net/600/400" class="card-img shadow" alt="Dog Pic">
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+   <div class="container mb-5" id="reviews">
+      <div class="row mb-2">
+         <h4 class="fw-bold m-0 mb-2 text-center">Dicono di noi</h4>
+      </div>
+      <div class="row mb-2">
+         <div class="col-2 col-md-1">
+            <img src="https://placedog.net/200/200" class="rounded-circle border border-info w-100" alt="Dog Pic">
+         </div>
+         <div class="col-10  col-md-11">
+            <h6 class="fw-bold">Username</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores vero provident sunt, voluptatibus
+               suscipit fuga esse ea cum nobis aspernatur quo doloribus placeat hic facilis dolore praesentium neque
+               iste quidem.</p>
+         </div>
+      </div>
+      <div class="row mb-2">
+         <div class="col-2 col-md-1">
+            <img src="https://placedog.net/200/200" class="rounded-circle border border-info w-100" alt="Dog Pic">
+         </div>
+         <div class="col-10  col-md-11">
+            <h6 class="fw-bold">Username</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores vero provident sunt, voluptatibus
+               suscipit fuga esse ea cum nobis aspernatur quo doloribus placeat hic facilis dolore praesentium neque
+               iste quidem.</p>
+         </div>
+      </div>
+      <div class="row mb-2">
+         <div class="col-2 col-md-1">
+            <img src="https://placedog.net/200/200" class="rounded-circle border border-info w-100" alt="Dog Pic">
+         </div>
+         <div class="col-10  col-md-11">
+            <h6 class="fw-bold">Username</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores vero provident sunt, voluptatibus
+               suscipit fuga esse ea cum nobis aspernatur quo doloribus placeat hic facilis dolore praesentium neque
+               iste quidem.</p>
+         </div>
+      </div>
+
+   </div>
+
+   <footer class="bg-dark text-secondary p-3">
+      <div class="row d-flex justify-content-center">
+         <div class="col-3  d-flex justify-content-center">
+            <a class="btn btn-outline-secondary m-3">Contattaci</a>
+         </div>
+      </div>
+      <div class="row justify-content-center">
+         <div class="col-8">
+            <p class="text-center">&copy; 2021 Kalina Travel LTD. All Rights Reserved.</p>
+         </div>
+      </div>
+   </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
