@@ -84,7 +84,7 @@
             <h4 class="fw-bold m-0">Saldi</h4>
          </div>
          <div class="col d-flex justify-content-end">
-            <a class="text-decoration-none text-info">Nascondi Sezione</a>
+            <a class="text-decoration-none text-info" onclick="removeCards()">Cancella tutte le card</a>
          </div>
       </div>
       <div id="cardsSales" class="row-cols-2 row-cols-md-3 row-cols-lg-4 d-flex justify-content-between flex-wrap">
@@ -165,7 +165,21 @@
       <div id="cardsSales" class="row-cols-2 row-cols-lg-3 d-flex justify-content-between flex-wrap">
          <div class="col pe-1 mb-3">
             <div class="card border shadow position-relative">
-               <span class="badge text-bg-danger position-absolute top-0 end-0 m-2">HOT</span>
+               <img src="https://placedog.net/600/400" class="card-img-top" alt="Dog Pic">
+               <div class="card-body">
+                  <h5 class="card-title fw-semibold">Titolo</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magnam
+                     voluptatibus
+                     laboriosam in deserunt, cum et nostrum officiis necessitatibus impedit sit amet temporibus, hic rem
+                     facere, recusandae voluptatem illo inventore.</p>
+               </div>
+               <div class="card-body">
+                  <a class="btn btn-info" onclick="addHot()">Rendi tutti Hot</a>
+               </div>
+            </div>
+         </div>
+         <div class="col pe-1 mb-3">
+            <div class="card border shadow position-relative">
                <img src="https://placedog.net/600/400" class="card-img-top" alt="Dog Pic">
                <div class="card-body">
                   <h5 class="card-title fw-semibold">Titolo</h5>
@@ -181,7 +195,6 @@
          </div>
          <div class="col pe-1 mb-3">
             <div class="card border shadow position-relative">
-               <span class="badge text-bg-danger position-absolute top-0 end-0 m-2">HOT</span>
                <img src="https://placedog.net/600/400" class="card-img-top" alt="Dog Pic">
                <div class="card-body">
                   <h5 class="card-title fw-semibold">Titolo</h5>
@@ -197,7 +210,6 @@
          </div>
          <div class="col pe-1 mb-3">
             <div class="card border shadow position-relative">
-               <span class="badge text-bg-danger position-absolute top-0 end-0 m-2">HOT</span>
                <img src="https://placedog.net/600/400" class="card-img-top" alt="Dog Pic">
                <div class="card-body">
                   <h5 class="card-title fw-semibold">Titolo</h5>
@@ -213,7 +225,6 @@
          </div>
          <div class="col pe-1 mb-3">
             <div class="card border shadow position-relative">
-               <span class="badge text-bg-danger position-absolute top-0 end-0 m-2">HOT</span>
                <img src="https://placedog.net/600/400" class="card-img-top" alt="Dog Pic">
                <div class="card-body">
                   <h5 class="card-title fw-semibold">Titolo</h5>
@@ -229,23 +240,6 @@
          </div>
          <div class="col pe-1 mb-3">
             <div class="card border shadow position-relative">
-               <span class="badge text-bg-danger position-absolute top-0 end-0 m-2">HOT</span>
-               <img src="https://placedog.net/600/400" class="card-img-top" alt="Dog Pic">
-               <div class="card-body">
-                  <h5 class="card-title fw-semibold">Titolo</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magnam
-                     voluptatibus
-                     laboriosam in deserunt, cum et nostrum officiis necessitatibus impedit sit amet temporibus, hic rem
-                     facere, recusandae voluptatem illo inventore.</p>
-               </div>
-               <div class="card-body">
-                  <a href="#" class="btn btn-info">Prenota</a>
-               </div>
-            </div>
-         </div>
-         <div class="col pe-1 mb-3">
-            <div class="card border shadow position-relative">
-               <span class="badge text-bg-danger position-absolute top-0 end-0 m-2">HOT</span>
                <img src="https://placedog.net/600/400" class="card-img-top" alt="Dog Pic">
                <div class="card-body">
                   <h5 class="card-title fw-semibold">Titolo</h5>
